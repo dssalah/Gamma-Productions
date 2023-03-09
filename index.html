@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-info">
+            <p>Cow Count: <span id="cow-count">0</span></p>
+            <p>Lives: <span id="lives">❤️ ❤️ ❤️<i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i></span></p>
+          </div>
+      
+          <div class="container">
+      
+      
+            <div id="game">
+              <div id="question-container">
+                <h2 id="question"></h2>
+                <input type="text" id="answer" autofocus onkeydown="if (event.keyCode == 13) checkAnswer()">
+                <button id="submit-button" onclick="checkAnswer()">Submit</button>
+              </div>
+              <div id="feedback-container">
+                <p id="feedback"></p>
+                <button id="next-button" onclick="nextQuestion()">Next Question</button>
+              </div>
+              <div id="feedback-container">
+                 
+                <h2 id="feedback"></h2>
+              </div>
+              <div id="score-container">
+                <h2>Score: <span id="score">0</span></h2>
+              </div>
+            </div>
+ 
+        <div class="background"></div>
+        <div class="background"></div>
+        G A M E</div>
+</body>
+<script src="/main.js"></script>
+</html>
